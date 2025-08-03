@@ -1,0 +1,26 @@
+{
+  "name": "sql-compiler-postgresql",
+  "version": "1.0.0",
+  "description": "PostgreSQL SQL compiler with AI-powered query generation",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "cd web && npm run dev",
+    "build": "cd packages/sql-compiler && npm run build && cd ../../web && npm run build",
+    "test": "cd packages/sql-compiler && npm test && cd ../../web && npm test",
+    "lint": "cd packages/sql-compiler && npm run lint && cd ../../web && npm run lint"
+  },
+  "keywords": [
+    "postgresql",
+    "sql",
+    "compiler",
+    "ai",
+    "nextjs"
+  ],
+  "author": "",
+  "license": "MIT",
+  "workspaces": [
+    "packages/*",
+    "web"
+  ]
+}
